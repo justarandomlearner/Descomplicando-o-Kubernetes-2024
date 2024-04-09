@@ -1,0 +1,59 @@
+kubectl get pods nome_do_pod -o wide|yaml 
+
+kubectl get pods -A|--all-namespaces
+
+kubectl run nome_do_pod --image nginx --port 80 
+
+kubectl run strigus --image nginx --port 80 
+
+kubectl exec -ti strigus -- sh
+
+kubectl run girus -ti --image alpine
+
+kubectl attach girus -c girus -i -t
+
+cd /proc 
+cat 37/cmdline
+
+cd /usr/share/nginx/html/
+
+kubectl exec meu-nginx -- cat /usr/share/nginx/html/index.html
+
+kubectl create -f pod.yaml
+kubectl apply -f pod.yaml
+
+kubectl logs girus
+kubectl logs girus -f
+kubectl logs girus -c ubuntu
+
+kubectl describe pods giropops
+
+
+
+
+
+
+
+
+curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+
+chmod +x ./kubectl
+
+sudo mv ./kubectl /usr/local/bin/kubectl
+
+kubectl version --client
+
+
+
+curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.14.0/kind-linux-amd64
+
+chmod +x ./kind
+
+sudo mv ./kind /usr/local/bin/kind
+
+
+
+
+
+
+
