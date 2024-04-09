@@ -28,6 +28,7 @@ kubectl logs girus -c ubuntu
 
 kubectl describe pods giropops
 
+-----------------------------------------
 
 
 
